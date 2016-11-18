@@ -1,0 +1,18 @@
+11-17-16:
+
+made two working functions:
+	inward_angle_pot_template
+	slanted_pot_template
+	made outward slanted template for lobe >=5
+	outward_5side_pot_template
+
+fit these functions into classes (attributes are lobes, angle 1, angle 2, side length, top length)
+
+found module to save turtle to svg and some sample code to use it:
+	canvasvg
+	save_to_svg_sample_code
+
+
+need to work on scaling
+
+make some decorations (greek key, fractals, spirograph pattern)

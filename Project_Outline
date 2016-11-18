@@ -1,0 +1,23 @@
+Possible functionalities:
+1) draw templates of various shapes
+2) draw geometric designs for embellishment
+3) scale templates and designs
+4) save image in printable format
+
+Features and attributes of each function:
+1) this could be done by generating several Class templates
+	a. user can define the number of sides for the template 
+	b. the user can define the angle of projection for the template
+
+2) this could be done by generating several Class embellishments
+	a. a spirograph image
+	b. a simple greek key
+	c. geometric stars
+	d. fractlals!!!
+
+3) this would scale the image so I can make different sizes of pottery and embellishments
+	a. look at this: http://stackoverflow.com/questions/1187358/how-to-resize-svg-image-file-using-librsvg-python-binding
+	b. cairo and rsvg would be tools
+
+4) I need to save this in a printable format to be useful. Right now I have a way to save my file as an svg that can be opened in chrome... maybe another format or maybe svg is okay?
+	
