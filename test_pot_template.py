@@ -1,5 +1,5 @@
-from save_to_svg import saveImg
 import turtle
+import math
 
 window = turtle.Screen()
 window.bgcolor("white")
@@ -16,20 +16,18 @@ def draw_lobe(new_turtle, angle, side, top):
     new_turtle.forward(side)
 
 
-def outward_pot_template():
+def main():
 	t = turtle.Turtle()
 
 	t.shape("classic")
 	t.color("red")
 	t.penup()
-	t.setx(-150)
-	t.sety(150)
-	# pot must have more than 5 lobes and be wider than it is tall...
-	number_of_lobes = int(raw_input("How many sides will your pot have? "))
+	
+	number_of_lobes = 5
 	# this factor makes the template vertical vs. slanted
-	angle = (360/number_of_lobes)
-	side = (int(raw_input("How inches tall will each lobe be? ")))*50
-	top = side + 50
+	angle = 360 + (360/number_of_lobes)
+	side = 30
+	top = 50
 
 	setup_template(t, angle)
 
@@ -37,10 +35,8 @@ def outward_pot_template():
 		draw_lobe(t, angle, side, top)
 		t.left(angle + 90)
 
-	
-	saveImg()
-	
-	t.clear()
+	window.exitonclick()
+
 
 
 

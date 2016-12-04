@@ -16,7 +16,7 @@ def draw_lobe(new_turtle, angle, side, top):
     new_turtle.forward(side)
 
 
-def outward_pot_template():
+def main():
 	t = turtle.Turtle()
 
 	t.shape("classic")
@@ -28,7 +28,7 @@ def outward_pot_template():
 	number_of_lobes = int(raw_input("How many sides will your pot have? "))
 	# this factor makes the template vertical vs. slanted
 	angle = (360/number_of_lobes)
-	side = (int(raw_input("How inches tall will each lobe be? ")))*50
+	side = (int(raw_input("How centimeters tall will each lobe be? ")))*50
 	top = side + 50
 
 	setup_template(t, angle)

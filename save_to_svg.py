@@ -3,7 +3,7 @@ import turtle
 
 def saveImg():
     print("Done.")
-    save = raw_input("Would you like to save this tree? Y/N \n")
+    save = raw_input("Would you like to save this image? Y/N \n")
     if save.upper() == "Y":
         turtle.hideturtle()
         name = raw_input("What would you like to name it? \n")

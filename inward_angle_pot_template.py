@@ -16,18 +16,20 @@ def draw_lobe(new_turtle, angle, side, top):
     new_turtle.forward(side)
 
 
-def main():
+def inward_pot_function():
 	t = turtle.Turtle()
 
 	t.shape("classic")
 	t.color("red")
 	t.penup()
+	t.setx(-150)
+	t.sety(150)
 	
-	number_of_lobes = 4
+	number_of_lobes = int(raw_input("How many sides will your pot have? "))
 	# this factor makes the template vertical vs. slanted
 	angle = 360 + (360/number_of_lobes)
-	side = 60
-	top = 20
+	side = (int(raw_input("How inches tall will each lobe be? ")))*50
+	top = (int(raw_input("How inches wide will each lobe be? ")))*50
 
 	setup_template(t, angle)
 
@@ -35,8 +37,10 @@ def main():
 		draw_lobe(t, angle, side, top)
 		t.left(angle)
 
-	# window.exitonclick()
+	
 	saveImg()
+
+	t.clear()
 
 
 

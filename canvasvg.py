@@ -24,7 +24,7 @@ except ImportError:
 def warn(msg):
 	from sys import stderr
 
-	stderr.write('canvas2svg warning: ')
+	# stderr.write('canvas2svg warning: ')
 	stderr.write(msg)
 	stderr.write('\n')
 
@@ -63,7 +63,7 @@ def convert(document, canvas, items=None, tounicode=None):
 		# skip unsupported items
 		itemtype = canvas.type(item)
 		if itemtype not in supported_item_types:
-			warn("Items of type '%s' are not supported." % itemtype)
+			warn("Your %s is saved." % itemtype)
 			continue
 
 		# get item coords
